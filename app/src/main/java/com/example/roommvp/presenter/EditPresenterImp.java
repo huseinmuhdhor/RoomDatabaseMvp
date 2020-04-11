@@ -18,7 +18,7 @@ public class EditPresenterImp implements EditPresenter {
 
     @Override
     public void save(Person person) {
-        long ids = this.personDao.insertPerson(person);
+        this.personDao.insertPerson(person);
         view.close();
     }
 

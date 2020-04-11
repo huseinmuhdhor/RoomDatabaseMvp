@@ -23,7 +23,7 @@ public interface PersonDao {
     Person findPerson(long id);
 
     @Insert(onConflict = IGNORE)
-    long insertPerson(Person person);
+    void insertPerson(Person person);
 
     @Update
     int updatePerson(Person person);
